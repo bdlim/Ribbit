@@ -19,6 +19,7 @@
 		89CDE13519B3D7A800A962DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE11D19B3D7A800A962DF /* UIKit.framework */; };
 		89CDE13D19B3D7A800A962DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE13B19B3D7A800A962DF /* InfoPlist.strings */; };
 		89CDE13F19B3D7A800A962DF /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE13E19B3D7A800A962DF /* RibbitTests.m */; };
+		89CDE14919B3D89600A962DF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14819B3D89600A962DF /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		89CDE13A19B3D7A800A962DF /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
 		89CDE13C19B3D7A800A962DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89CDE13E19B3D7A800A962DF /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
+		89CDE14819B3D89600A962DF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		89CDE10D19B3D7A800A962DF = {
 			isa = PBXGroup;
 			children = (
+				89CDE14819B3D89600A962DF /* MainStoryboard.storyboard */,
 				89CDE11F19B3D7A800A962DF /* Ribbit */,
 				89CDE13819B3D7A800A962DF /* RibbitTests */,
 				89CDE11819B3D7A800A962DF /* Frameworks */,
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CDE14919B3D89600A962DF /* MainStoryboard.storyboard in Resources */,
 				89CDE12419B3D7A800A962DF /* InfoPlist.strings in Resources */,
 				89CDE12C19B3D7A800A962DF /* Images.xcassets in Resources */,
 			);
@@ -438,6 +442,7 @@
 				89CDE14419B3D7A800A962DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89CDE14519B3D7A800A962DF /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +451,7 @@
 				89CDE14719B3D7A800A962DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
