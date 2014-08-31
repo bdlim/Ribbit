@@ -7,11 +7,14 @@
 //
 
 #import "BLAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"42WMpdW4OY4OGG571EXY09BGakrxwQ6SM4x4QboE"
+                  clientKey:@"8j9JNsI5fMD8oMMvIPw7LC9KfeNkm6sXu4OxT54D"];
     return YES;
 }
 
