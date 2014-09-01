@@ -38,6 +38,11 @@
 		89CDE16C19B3E78200A962DF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE16319B3E78200A962DF /* StoreKit.framework */; };
 		89CDE16D19B3E78200A962DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE16419B3E78200A962DF /* SystemConfiguration.framework */; };
 		89CDE16F19B3E78B00A962DF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE16E19B3E78B00A962DF /* Bolts.framework */; };
+		89CDE17219B3EA0400A962DF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17119B3EA0400A962DF /* LoginViewController.m */; };
+		89CDE17519B3EA1600A962DF /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17419B3EA1600A962DF /* SignupViewController.m */; };
+		89CDE17819B405F000A962DF /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17719B405F000A962DF /* EditFriendsViewController.m */; };
+		89CDE17B19B40C5A00A962DF /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17A19B40C5A00A962DF /* FriendsViewController.m */; };
+		89CDE17E19B425DA00A962DF /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17D19B425DA00A962DF /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,16 @@
 		89CDE16319B3E78200A962DF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		89CDE16419B3E78200A962DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		89CDE16E19B3E78B00A962DF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		89CDE17019B3EA0400A962DF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		89CDE17119B3EA0400A962DF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		89CDE17319B3EA1600A962DF /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		89CDE17419B3EA1600A962DF /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		89CDE17619B405F000A962DF /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
+		89CDE17719B405F000A962DF /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
+		89CDE17919B40C5A00A962DF /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		89CDE17A19B40C5A00A962DF /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		89CDE17C19B425DA00A962DF /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
+		89CDE17D19B425DA00A962DF /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +189,16 @@
 				89CDE12919B3D7A800A962DF /* BLAppDelegate.m */,
 				89CDE15719B3E10F00A962DF /* InboxViewController.h */,
 				89CDE15819B3E10F00A962DF /* InboxViewController.m */,
+				89CDE17019B3EA0400A962DF /* LoginViewController.h */,
+				89CDE17119B3EA0400A962DF /* LoginViewController.m */,
+				89CDE17619B405F000A962DF /* EditFriendsViewController.h */,
+				89CDE17719B405F000A962DF /* EditFriendsViewController.m */,
+				89CDE17919B40C5A00A962DF /* FriendsViewController.h */,
+				89CDE17A19B40C5A00A962DF /* FriendsViewController.m */,
+				89CDE17319B3EA1600A962DF /* SignupViewController.h */,
+				89CDE17419B3EA1600A962DF /* SignupViewController.m */,
+				89CDE17C19B425DA00A962DF /* CameraViewController.h */,
+				89CDE17D19B425DA00A962DF /* CameraViewController.m */,
 				89CDE12B19B3D7A800A962DF /* Images.xcassets */,
 				89CDE12019B3D7A800A962DF /* Supporting Files */,
 			);
@@ -325,9 +350,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CDE17219B3EA0400A962DF /* LoginViewController.m in Sources */,
+				89CDE17E19B425DA00A962DF /* CameraViewController.m in Sources */,
 				89CDE12A19B3D7A800A962DF /* BLAppDelegate.m in Sources */,
+				89CDE17B19B40C5A00A962DF /* FriendsViewController.m in Sources */,
 				89CDE12619B3D7A800A962DF /* main.m in Sources */,
 				89CDE15919B3E10F00A962DF /* InboxViewController.m in Sources */,
+				89CDE17819B405F000A962DF /* EditFriendsViewController.m in Sources */,
+				89CDE17519B3EA1600A962DF /* SignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
