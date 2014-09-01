@@ -8,7 +8,7 @@
         <scene sceneID="lq3-sW-osc">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="GKh-KS-UMq" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="En3-cP-AXm">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -24,6 +24,34 @@
             </objects>
             <point key="canvasLocation" x="-184" y="-14"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Xtz-p7-nba">
+            <objects>
+                <viewController id="h0i-dy-KYa" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jNt-Wd-ACm"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWR-Ew-p8D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9he-83-t6I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ikq-8I-4oa">
+                                <rect key="frame" x="0.0" y="64" width="320" height="369"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4uv-7y-rT1"/>
+                    <connections>
+                        <outlet property="imageView" destination="Ikq-8I-4oa" id="jfP-Qz-0zb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBc-lL-3FE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1331" y="-1333"/>
+        </scene>
         <!--Inbox View Controller - Ribbit-->
         <scene sceneID="Ete-BW-X1b">
             <objects>
@@ -33,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nf6-n9-hIF">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="nf6-n9-hIF">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nf6-n9-hIF" id="r6b-Yd-Ake">
@@ -56,11 +84,12 @@
                     </navigationItem>
                     <connections>
                         <segue destination="Ubl-4k-p9K" kind="push" identifier="showLogin" id="uYg-at-urO"/>
+                        <segue destination="h0i-dy-KYa" kind="push" identifier="showImage" id="PLr-iL-hTB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzW-iY-H9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="-730"/>
+            <point key="canvasLocation" x="904" y="-730"/>
         </scene>
         <!--Login View Controller - Ribbit-->
         <scene sceneID="OI5-cF-wg3">

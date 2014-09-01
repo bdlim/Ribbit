@@ -187,7 +187,7 @@
             PFObject *message = [PFObject objectWithClassName:@"Messages"];
             [message setObject:file forKey:@"file"];
             [message setObject:fileType forKey:@"fileType"];
-            [message setObject:self.recipients forKey:@"receipientIds"];
+            [message setObject:self.recipients forKey:@"recipientIds"];
             [message setObject:[[PFUser currentUser] objectId] forKey:@"senderId"];
             [message setObject:[[PFUser currentUser] username] forKey:@"senderName"];
             [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

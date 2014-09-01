@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89C460AD19B51001001272A1 /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460A919B51001001272A1 /* icon_image.png */; };
+		89C460AE19B51001001272A1 /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460AA19B51001001272A1 /* icon_image@2x.png */; };
+		89C460AF19B51001001272A1 /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460AB19B51001001272A1 /* icon_video.png */; };
+		89C460B019B51001001272A1 /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460AC19B51001001272A1 /* icon_video@2x.png */; };
+		89C460B319B51291001272A1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460B219B51291001272A1 /* ImageViewController.m */; };
+		89C460B519B51E4C001272A1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460B419B51E4C001272A1 /* MediaPlayer.framework */; };
 		89CDE11A19B3D7A800A962DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE11919B3D7A800A962DF /* Foundation.framework */; };
 		89CDE11C19B3D7A800A962DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE11B19B3D7A800A962DF /* CoreGraphics.framework */; };
 		89CDE11E19B3D7A800A962DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE11D19B3D7A800A962DF /* UIKit.framework */; };
@@ -56,6 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89C460A919B51001001272A1 /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		89C460AA19B51001001272A1 /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		89C460AB19B51001001272A1 /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		89C460AC19B51001001272A1 /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		89C460B119B51291001272A1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
+		89C460B219B51291001272A1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
+		89C460B419B51E4C001272A1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		89CDE11619B3D7A800A962DF /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CDE11919B3D7A800A962DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89CDE11B19B3D7A800A962DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C460B519B51E4C001272A1 /* MediaPlayer.framework in Frameworks */,
 				89CDE16519B3E78200A962DF /* AudioToolbox.framework in Frameworks */,
 				89CDE16619B3E78200A962DF /* CFNetwork.framework in Frameworks */,
 				89CDE16719B3E78200A962DF /* CoreLocation.framework in Frameworks */,
@@ -163,6 +177,7 @@
 		89CDE11819B3D7A800A962DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89C460B419B51E4C001272A1 /* MediaPlayer.framework */,
 				89CDE16E19B3E78B00A962DF /* Bolts.framework */,
 				89CDE15C19B3E78200A962DF /* AudioToolbox.framework */,
 				89CDE15D19B3E78200A962DF /* CFNetwork.framework */,
@@ -185,6 +200,8 @@
 		89CDE11F19B3D7A800A962DF /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				89C460B119B51291001272A1 /* ImageViewController.h */,
+				89C460B219B51291001272A1 /* ImageViewController.m */,
 				89CDE12819B3D7A800A962DF /* BLAppDelegate.h */,
 				89CDE12919B3D7A800A962DF /* BLAppDelegate.m */,
 				89CDE15719B3E10F00A962DF /* InboxViewController.h */,
@@ -237,6 +254,10 @@
 		89CDE15619B3DA2100A962DF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				89C460A919B51001001272A1 /* icon_image.png */,
+				89C460AA19B51001001272A1 /* icon_image@2x.png */,
+				89C460AB19B51001001272A1 /* icon_video.png */,
+				89C460AC19B51001001272A1 /* icon_video@2x.png */,
 				89CDE14A19B3DA1500A962DF /* camera.png */,
 				89CDE14B19B3DA1500A962DF /* camera@2x.png */,
 				89CDE14C19B3DA1500A962DF /* friends.png */,
@@ -323,15 +344,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C460AF19B51001001272A1 /* icon_video.png in Resources */,
 				89CDE14919B3D89600A962DF /* MainStoryboard.storyboard in Resources */,
 				89CDE15219B3DA1500A962DF /* friends.png in Resources */,
+				89C460AD19B51001001272A1 /* icon_image.png in Resources */,
 				89CDE15319B3DA1500A962DF /* friends@2x.png in Resources */,
 				89CDE15119B3DA1500A962DF /* camera@2x.png in Resources */,
 				89CDE15419B3DA1500A962DF /* inbox.png in Resources */,
 				89CDE12419B3D7A800A962DF /* InfoPlist.strings in Resources */,
+				89C460AE19B51001001272A1 /* icon_image@2x.png in Resources */,
 				89CDE15019B3DA1500A962DF /* camera.png in Resources */,
 				89CDE12C19B3D7A800A962DF /* Images.xcassets in Resources */,
 				89CDE15519B3DA1500A962DF /* inbox@2x.png in Resources */,
+				89C460B019B51001001272A1 /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +381,7 @@
 				89CDE17B19B40C5A00A962DF /* FriendsViewController.m in Sources */,
 				89CDE12619B3D7A800A962DF /* main.m in Sources */,
 				89CDE15919B3E10F00A962DF /* InboxViewController.m in Sources */,
+				89C460B319B51291001272A1 /* ImageViewController.m in Sources */,
 				89CDE17819B405F000A962DF /* EditFriendsViewController.m in Sources */,
 				89CDE17519B3EA1600A962DF /* SignupViewController.m in Sources */,
 			);
