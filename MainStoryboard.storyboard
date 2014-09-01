@@ -192,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="1377" y="-105"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Camera View Controller - Recipients-->
         <scene sceneID="Rh4-fP-Ce6">
             <objects>
                 <tableViewController id="3vg-UF-6SW" customClass="CameraViewController" sceneMemberID="viewController">
@@ -201,7 +201,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DuN-XN-sX6">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DuN-XN-sX6">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DuN-XN-sX6" id="HLt-tb-Pgy">
@@ -215,7 +215,18 @@
                             <outlet property="delegate" destination="3vg-UF-6SW" id="BVP-lA-xiF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="V3g-Ti-7EJ"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="V3g-Ti-7EJ">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="CGE-QS-zvF">
+                            <connections>
+                                <action selector="cancel:" destination="3vg-UF-6SW" id="aCR-VZ-eRw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="Fgo-Dw-NSP">
+                            <connections>
+                                <action selector="send:" destination="3vg-UF-6SW" id="cfn-y7-2Je"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFR-Cy-zPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
