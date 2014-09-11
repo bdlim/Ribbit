@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89C460AD19B51001001272A1 /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460A919B51001001272A1 /* icon_image.png */; };
-		89C460AE19B51001001272A1 /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460AA19B51001001272A1 /* icon_image@2x.png */; };
-		89C460AF19B51001001272A1 /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460AB19B51001001272A1 /* icon_video.png */; };
-		89C460B019B51001001272A1 /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C460AC19B51001001272A1 /* icon_video@2x.png */; };
+		8968163E19C2295C004B6408 /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8968163B19C2295C004B6408 /* MSCellAccessory.m */; };
+		8968163F19C2295C004B6408 /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8968163D19C2295C004B6408 /* UIView+AccessViewController.m */; };
+		8968164219C23349004B6408 /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8968164019C23349004B6408 /* GravatarUrlBuilder.m */; };
 		89C460B319B51291001272A1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460B219B51291001272A1 /* ImageViewController.m */; };
 		89C460B519B51E4C001272A1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460B419B51E4C001272A1 /* MediaPlayer.framework */; };
 		89CDE11A19B3D7A800A962DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE11919B3D7A800A962DF /* Foundation.framework */; };
@@ -26,12 +25,6 @@
 		89CDE13D19B3D7A800A962DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE13B19B3D7A800A962DF /* InfoPlist.strings */; };
 		89CDE13F19B3D7A800A962DF /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE13E19B3D7A800A962DF /* RibbitTests.m */; };
 		89CDE14919B3D89600A962DF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14819B3D89600A962DF /* MainStoryboard.storyboard */; };
-		89CDE15019B3DA1500A962DF /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14A19B3DA1500A962DF /* camera.png */; };
-		89CDE15119B3DA1500A962DF /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14B19B3DA1500A962DF /* camera@2x.png */; };
-		89CDE15219B3DA1500A962DF /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14C19B3DA1500A962DF /* friends.png */; };
-		89CDE15319B3DA1500A962DF /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14D19B3DA1500A962DF /* friends@2x.png */; };
-		89CDE15419B3DA1500A962DF /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14E19B3DA1500A962DF /* inbox.png */; };
-		89CDE15519B3DA1500A962DF /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CDE14F19B3DA1500A962DF /* inbox@2x.png */; };
 		89CDE15919B3E10F00A962DF /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE15819B3E10F00A962DF /* InboxViewController.m */; };
 		89CDE15B19B3E6E700A962DF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE15A19B3E6E700A962DF /* Parse.framework */; };
 		89CDE16519B3E78200A962DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDE15C19B3E78200A962DF /* AudioToolbox.framework */; };
@@ -49,20 +42,8 @@
 		89CDE17819B405F000A962DF /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17719B405F000A962DF /* EditFriendsViewController.m */; };
 		89CDE17B19B40C5A00A962DF /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17A19B40C5A00A962DF /* FriendsViewController.m */; };
 		89CDE17E19B425DA00A962DF /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CDE17D19B425DA00A962DF /* CameraViewController.m */; };
-		89D6AB0A19C0D1360015BB67 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AAFC19C0D1360015BB67 /* Default-568h@2x.png */; };
-		89D6AB0B19C0D1360015BB67 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AAFD19C0D1360015BB67 /* Default.png */; };
-		89D6AB0C19C0D1360015BB67 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AAFE19C0D1360015BB67 /* Default@2x.png */; };
-		89D6AB0D19C0D1360015BB67 /* Icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AAFF19C0D1360015BB67 /* Icon_29.png */; };
-		89D6AB0E19C0D1360015BB67 /* Icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0019C0D1360015BB67 /* Icon_58.png */; };
-		89D6AB0F19C0D1360015BB67 /* Icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0119C0D1360015BB67 /* Icon_80.png */; };
-		89D6AB1019C0D1360015BB67 /* Icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0219C0D1360015BB67 /* Icon_120.png */; };
-		89D6AB1119C0D1360015BB67 /* icon_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0319C0D1360015BB67 /* icon_x.png */; };
-		89D6AB1219C0D1360015BB67 /* icon_x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0419C0D1360015BB67 /* icon_x@2x.png */; };
-		89D6AB1319C0D1360015BB67 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0519C0D1360015BB67 /* Icon.png */; };
-		89D6AB1419C0D1360015BB67 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0619C0D1360015BB67 /* Icon@2x.png */; };
-		89D6AB1519C0D1360015BB67 /* loginBackground-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0719C0D1360015BB67 /* loginBackground-568h@2x.png */; };
-		89D6AB1619C0D1360015BB67 /* loginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0819C0D1360015BB67 /* loginBackground.png */; };
-		89D6AB1719C0D1360015BB67 /* loginBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D6AB0919C0D1360015BB67 /* loginBackground@2x.png */; };
+		89D6AB1C19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D6AB1B19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.m */; };
+		89D6AB1F19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D6AB1E19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		89C460A919B51001001272A1 /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
-		89C460AA19B51001001272A1 /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
-		89C460AB19B51001001272A1 /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
-		89C460AC19B51001001272A1 /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		8968163A19C2295C004B6408 /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		8968163B19C2295C004B6408 /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		8968163C19C2295C004B6408 /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		8968163D19C2295C004B6408 /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+		8968164019C23349004B6408 /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
+		8968164119C23349004B6408 /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
 		89C460B119B51291001272A1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
 		89C460B219B51291001272A1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
 		89C460B419B51E4C001272A1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -100,12 +83,6 @@
 		89CDE13C19B3D7A800A962DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89CDE13E19B3D7A800A962DF /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
 		89CDE14819B3D89600A962DF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		89CDE14A19B3DA1500A962DF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		89CDE14B19B3DA1500A962DF /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
-		89CDE14C19B3DA1500A962DF /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
-		89CDE14D19B3DA1500A962DF /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
-		89CDE14E19B3DA1500A962DF /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
-		89CDE14F19B3DA1500A962DF /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		89CDE15719B3E10F00A962DF /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
 		89CDE15819B3E10F00A962DF /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 		89CDE15A19B3E6E700A962DF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -129,20 +106,10 @@
 		89CDE17A19B40C5A00A962DF /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		89CDE17C19B425DA00A962DF /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		89CDE17D19B425DA00A962DF /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
-		89D6AAFC19C0D1360015BB67 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		89D6AAFD19C0D1360015BB67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		89D6AAFE19C0D1360015BB67 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		89D6AAFF19C0D1360015BB67 /* Icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_29.png; sourceTree = "<group>"; };
-		89D6AB0019C0D1360015BB67 /* Icon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_58.png; sourceTree = "<group>"; };
-		89D6AB0119C0D1360015BB67 /* Icon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_80.png; sourceTree = "<group>"; };
-		89D6AB0219C0D1360015BB67 /* Icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_120.png; sourceTree = "<group>"; };
-		89D6AB0319C0D1360015BB67 /* icon_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_x.png; sourceTree = "<group>"; };
-		89D6AB0419C0D1360015BB67 /* icon_x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_x@2x.png"; sourceTree = "<group>"; };
-		89D6AB0519C0D1360015BB67 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		89D6AB0619C0D1360015BB67 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		89D6AB0719C0D1360015BB67 /* loginBackground-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBackground-568h@2x.png"; sourceTree = "<group>"; };
-		89D6AB0819C0D1360015BB67 /* loginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBackground.png; sourceTree = "<group>"; };
-		89D6AB0919C0D1360015BB67 /* loginBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBackground@2x.png"; sourceTree = "<group>"; };
+		89D6AB1A19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		89D6AB1B19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		89D6AB1D19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		89D6AB1E19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +148,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8968163919C2295C004B6408 /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				8968163A19C2295C004B6408 /* MSCellAccessory.h */,
+				8968163B19C2295C004B6408 /* MSCellAccessory.m */,
+				8968163C19C2295C004B6408 /* UIView+AccessViewController.h */,
+				8968163D19C2295C004B6408 /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
+			sourceTree = "<group>";
+		};
 		89CDE10D19B3D7A800A962DF = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +206,13 @@
 		89CDE11F19B3D7A800A962DF /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				8968164019C23349004B6408 /* GravatarUrlBuilder.m */,
+				8968164119C23349004B6408 /* GravatarUrlBuilder.h */,
+				8968163919C2295C004B6408 /* MSCellAccessory */,
+				89D6AB1D19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				89D6AB1E19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				89D6AB1A19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.h */,
+				89D6AB1B19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.m */,
 				89C460B119B51291001272A1 /* ImageViewController.h */,
 				89C460B219B51291001272A1 /* ImageViewController.m */,
 				89CDE12819B3D7A800A962DF /* BLAppDelegate.h */,
@@ -282,30 +267,6 @@
 		89CDE15619B3DA2100A962DF /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				89D6AAFC19C0D1360015BB67 /* Default-568h@2x.png */,
-				89D6AAFD19C0D1360015BB67 /* Default.png */,
-				89D6AAFE19C0D1360015BB67 /* Default@2x.png */,
-				89D6AAFF19C0D1360015BB67 /* Icon_29.png */,
-				89D6AB0019C0D1360015BB67 /* Icon_58.png */,
-				89D6AB0119C0D1360015BB67 /* Icon_80.png */,
-				89D6AB0219C0D1360015BB67 /* Icon_120.png */,
-				89D6AB0319C0D1360015BB67 /* icon_x.png */,
-				89D6AB0419C0D1360015BB67 /* icon_x@2x.png */,
-				89D6AB0519C0D1360015BB67 /* Icon.png */,
-				89D6AB0619C0D1360015BB67 /* Icon@2x.png */,
-				89D6AB0719C0D1360015BB67 /* loginBackground-568h@2x.png */,
-				89D6AB0819C0D1360015BB67 /* loginBackground.png */,
-				89D6AB0919C0D1360015BB67 /* loginBackground@2x.png */,
-				89C460A919B51001001272A1 /* icon_image.png */,
-				89C460AA19B51001001272A1 /* icon_image@2x.png */,
-				89C460AB19B51001001272A1 /* icon_video.png */,
-				89C460AC19B51001001272A1 /* icon_video@2x.png */,
-				89CDE14A19B3DA1500A962DF /* camera.png */,
-				89CDE14B19B3DA1500A962DF /* camera@2x.png */,
-				89CDE14C19B3DA1500A962DF /* friends.png */,
-				89CDE14D19B3DA1500A962DF /* friends@2x.png */,
-				89CDE14E19B3DA1500A962DF /* inbox.png */,
-				89CDE14F19B3DA1500A962DF /* inbox@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -386,33 +347,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D6AB0C19C0D1360015BB67 /* Default@2x.png in Resources */,
-				89D6AB1419C0D1360015BB67 /* Icon@2x.png in Resources */,
-				89C460AF19B51001001272A1 /* icon_video.png in Resources */,
 				89CDE14919B3D89600A962DF /* MainStoryboard.storyboard in Resources */,
-				89D6AB0E19C0D1360015BB67 /* Icon_58.png in Resources */,
-				89CDE15219B3DA1500A962DF /* friends.png in Resources */,
-				89C460AD19B51001001272A1 /* icon_image.png in Resources */,
-				89D6AB0B19C0D1360015BB67 /* Default.png in Resources */,
-				89CDE15319B3DA1500A962DF /* friends@2x.png in Resources */,
-				89D6AB0F19C0D1360015BB67 /* Icon_80.png in Resources */,
-				89D6AB1319C0D1360015BB67 /* Icon.png in Resources */,
-				89D6AB0D19C0D1360015BB67 /* Icon_29.png in Resources */,
-				89D6AB1019C0D1360015BB67 /* Icon_120.png in Resources */,
-				89D6AB1719C0D1360015BB67 /* loginBackground@2x.png in Resources */,
-				89D6AB0A19C0D1360015BB67 /* Default-568h@2x.png in Resources */,
-				89CDE15119B3DA1500A962DF /* camera@2x.png in Resources */,
-				89CDE15419B3DA1500A962DF /* inbox.png in Resources */,
 				89CDE12419B3D7A800A962DF /* InfoPlist.strings in Resources */,
-				89C460AE19B51001001272A1 /* icon_image@2x.png in Resources */,
-				89CDE15019B3DA1500A962DF /* camera.png in Resources */,
 				89CDE12C19B3D7A800A962DF /* Images.xcassets in Resources */,
-				89D6AB1519C0D1360015BB67 /* loginBackground-568h@2x.png in Resources */,
-				89D6AB1619C0D1360015BB67 /* loginBackground.png in Resources */,
-				89D6AB1219C0D1360015BB67 /* icon_x@2x.png in Resources */,
-				89CDE15519B3DA1500A962DF /* inbox@2x.png in Resources */,
-				89C460B019B51001001272A1 /* icon_video@2x.png in Resources */,
-				89D6AB1119C0D1360015BB67 /* icon_x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CDE17219B3EA0400A962DF /* LoginViewController.m in Sources */,
+				8968164219C23349004B6408 /* GravatarUrlBuilder.m in Sources */,
+				89D6AB1C19C16EDE0015BB67 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				8968163F19C2295C004B6408 /* UIView+AccessViewController.m in Sources */,
 				89CDE17E19B425DA00A962DF /* CameraViewController.m in Sources */,
 				89CDE12A19B3D7A800A962DF /* BLAppDelegate.m in Sources */,
+				8968163E19C2295C004B6408 /* MSCellAccessory.m in Sources */,
 				89CDE17B19B40C5A00A962DF /* FriendsViewController.m in Sources */,
+				89D6AB1F19C16F920015BB67 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				89CDE12619B3D7A800A962DF /* main.m in Sources */,
 				89CDE15919B3E10F00A962DF /* InboxViewController.m in Sources */,
 				89C460B319B51291001272A1 /* ImageViewController.m in Sources */,
@@ -554,6 +496,8 @@
 		89CDE14319B3D7A800A962DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -561,6 +505,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -569,6 +514,8 @@
 		89CDE14419B3D7A800A962DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -576,6 +523,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

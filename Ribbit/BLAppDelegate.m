@@ -13,8 +13,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NSThread sleepForTimeInterval:1.5];
     [Parse setApplicationId:@"42WMpdW4OY4OGG571EXY09BGakrxwQ6SM4x4QboE"
                   clientKey:@"8j9JNsI5fMD8oMMvIPw7LC9KfeNkm6sXu4OxT54D"];
+    
+    [self customizeUserInterface];
+    
     return YES;
 }
 
@@ -45,4 +49,42 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Helper Methods
+
+
+- (void)customizeUserInterface {
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.553 green:0.435 blue:0.718 alpha:1.0]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    
+    UITabBarItem *tabInbox = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabFriends = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabCamera = [tabBar.items objectAtIndex:2];
+
+    UIImage *inboxIconImage = [[UIImage imageNamed:@"inbox"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *friendsIconImage = [[UIImage imageNamed:@"friends"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *cameraIconImage = [[UIImage imageNamed:@"camera"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    tabInbox = [tabInbox initWithTitle:@"Inbox" image:inboxIconImage selectedImage:inboxIconImage];
+    tabCamera = [tabCamera initWithTitle:@"Camera" image:cameraIconImage selectedImage:cameraIconImage];
+    tabFriends = [tabFriends initWithTitle:@"Friends" image:friendsIconImage selectedImage:friendsIconImage];
+    
+
+    
+}
+
+
+
+
 @end
+
+
+
+
+

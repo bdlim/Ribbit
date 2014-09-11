@@ -8,6 +8,7 @@
 
 #import "InboxViewController.h"
 #import "ImageViewController.h"
+#import "MSCellAccessory.h"
 
 @interface InboxViewController ()
 
@@ -28,6 +29,9 @@
     } else {
         [self performSegueWithIdentifier:@"showLogin" sender:self];
     }
+    
+    self.refreshControl = [[UIRefreshControl alloc]init];
+    [self.refreshControl addTarget:self action:@selector(retrieveMessages) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -35,17 +39,7 @@
     
     [self.navigationController.navigationBar setHidden:NO];
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
-    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser]objectId]];
-    [query orderByDescending:@"createdAt"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        } else {
-            self.messages = objects;
-            [self.tableView reloadData];
-        }
-    }];
+    [self retrieveMessages];
 }
 
 
@@ -69,6 +63,9 @@
     
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     cell.textLabel.text = [message objectForKey:@"senderName"];
+    
+    UIColor *disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
+    cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_DISCLOSURE_INDICATOR color:disclosureColor];
     
     NSString *fileType = [message objectForKey:@"fileType"];
     if ([fileType isEqualToString:@"image"]) {
@@ -145,5 +142,29 @@
     
     return thumbnail;
 }
+
+#pragma mark - Helper methods
+
+- (void)retrieveMessages {
+    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
+    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser]objectId]];
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        } else {
+            self.messages = objects;
+            [self.tableView reloadData];
+        }
+        
+        if ([self.refreshControl isRefreshing]) {
+            [self.refreshControl endRefreshing];
+        }
+    }];
+}
+
+
+
+
 
 @end
